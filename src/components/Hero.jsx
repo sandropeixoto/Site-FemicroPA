@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import heroBg from '../assets/hero-bg.png';
+import logosSistemas from '../assets/logos-sistemas.png';
 
 export default function Hero() {
   return (
@@ -50,23 +51,38 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="relative"
         >
-          <div className="glass-card p-8 relative overflow-hidden group">
+          <div className="glass-card p-8 relative overflow-hidden group flex flex-col items-center text-center">
+            {/* Background glow */}
             <div className="absolute -top-24 -right-24 w-48 h-48 bg-accent/20 blur-3xl rounded-full group-hover:bg-accent/30 transition-all duration-500"></div>
-            <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-              <span className="w-2 h-8 bg-secondary rounded-full"></span>
-              Últimas Notícias
-            </h3>
-            <div className="space-y-6">
-              <div className="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-accent/40 transition-colors cursor-pointer">
-                <p className="text-xs text-secondary font-bold mb-1 uppercase tracking-wider">Fórum Estadual</p>
-                <h4 className="font-semibold">Femicro-PA leva demandas dos pequenos negócios ao FEMEP.</h4>
-              </div>
-              <div className="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-accent/40 transition-colors cursor-pointer">
-                <p className="text-xs text-secondary font-bold mb-1 uppercase tracking-wider">Capacitação</p>
-                <h4 className="font-semibold">Parceria com Sindiclubes capacitará 500+ empreendedores em 2025.</h4>
-              </div>
-            </div>
+            <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-secondary/10 blur-3xl rounded-full group-hover:bg-secondary/20 transition-all duration-500"></div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6 }}
+              className="text-xs font-bold tracking-[0.25em] text-secondary uppercase mb-6"
+            >
+              Sistema de Representação
+            </motion.p>
+
+            <motion.div
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+              className="relative z-10"
+            >
+              <div className="absolute inset-0 rounded-2xl bg-secondary/10 blur-2xl scale-110 group-hover:bg-secondary/20 transition-all duration-500"></div>
+              <img
+                src={logosSistemas}
+                alt="Logomarcas do Sistema COMICRO-FEMICRO-AMICRO"
+                className="relative w-full max-w-xs mx-auto drop-shadow-2xl rounded-xl"
+              />
+            </motion.div>
+
+            <p className="relative z-10 mt-6 text-sm text-slate-400 leading-relaxed max-w-xs">
+              Estrutura integrada que une <span className="text-secondary font-semibold">COMICRO</span>, <span className="text-accent font-semibold">FEMICRO</span> e <span className="text-white/80 font-semibold">AMICRO</span> em prol do empreendedorismo paraense.
+            </p>
           </div>
+
 
           {/* Floating Element */}
           <motion.div
