@@ -5,22 +5,26 @@ const partners = [
   {
     name: "COMICRO",
     role: "Confederação Nacional",
-    desc: "Confederação Nacional das Microempresas e Empresas de Pequeno Porte, nossa voz em Brasília."
+    desc: "Confederação Nacional das Microempresas e Empresas de Pequeno Porte, nossa voz em Brasília.",
+    link: "https://comicro.org.br/"
   },
   {
     name: "Sindiclubes",
     role: "Parceiro Institucional",
-    desc: "Sindicato dos Clubes Sociais do Pará, parceria estratégica para o desenvolvimento regional."
+    desc: "Sindicato dos Clubes Sociais do Pará, parceria estratégica para o desenvolvimento regional.",
+    link: "https://sindiclubespa.com.br/"
   },
   {
     name: "ADVB-PA",
     role: "Marketing & Vendas",
-    desc: "Associação dos Dirigentes de Vendas e Marketing do Brasil, fortalecendo a gestão comercial."
+    desc: "Associação dos Dirigentes de Vendas e Marketing do Brasil, fortalecendo a gestão comercial.",
+    link: "https://advbpa.com.br/"
   },
   {
     name: "Nano Tecnologia",
     role: "Soluções Digitais",
-    desc: "Empresa focada no desenvolvimento web de soluções personalizadas e inovação tecnológica."
+    desc: "Empresa focada no desenvolvimento web de soluções personalizadas e inovação tecnológica.",
+    link: "https://nano.net.br/"
   }
 ];
 
@@ -74,9 +78,14 @@ export default function Partners() {
                 {partner.desc}
               </p>
               <div className="pt-4 border-t border-white/5">
-                <button className="text-xs font-bold text-slate-300 hover:text-white flex items-center gap-1 transition-colors">
+                <a 
+                  href={partner.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-xs font-bold text-slate-300 hover:text-white flex items-center gap-1 transition-colors"
+                >
                   VER MAIORES DETALHES <ExternalLink className="w-3 h-3" />
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}
