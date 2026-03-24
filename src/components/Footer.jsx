@@ -6,11 +6,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-2">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center font-bold text-white text-xl">
-                F
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-14 h-14 rounded-xl overflow-hidden glass-card flex items-center justify-center p-2">
+                <img src="/LOGO-FEMICRO-PA-icon.png" alt="Femicro-PA Logo" className="w-full h-full object-contain" />
               </div>
-              <span className="text-2xl font-bold">Femicro-PA</span>
+              <span className="text-2xl font-bold tracking-tight">Femicro-PA</span>
             </div>
             <p className="text-slate-400 max-w-sm mb-6">
               A Federação das Associações e Entidades de Microempresas e Empresas de Pequeno Porte do Pará atua desde a fundação no fortalecimento do setor produtivo paraense.
@@ -29,7 +29,9 @@ export default function Footer() {
             <ul className="space-y-3 text-slate-400">
               {['COMICRO', 'Sindiclubes', 'ADVB-PA', 'Nano Tecnologia'].map((item) => (
                 <li key={item} className="flex gap-2 items-center hover:text-accent transition-colors cursor-pointer">
-                  <ExternalLink className="w-3 h-3" /> {item}
+                  <a href="#parceiros" className="flex items-center gap-2">
+                    <ExternalLink className="w-3 h-3" /> {item}
+                  </a>
                 </li>
               ))}
             </ul>

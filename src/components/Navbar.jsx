@@ -12,9 +12,9 @@ export default function Navbar() {
         animate={{ y: 0 }}
         className="max-w-7xl mx-auto glass-card px-6 py-3 flex justify-between items-center"
       >
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center font-bold text-white text-xl">
-            F
+        <div className="flex items-center gap-3">
+          <div className="w-12 h-12 rounded-lg overflow-hidden glass-card flex items-center justify-center p-1">
+            <img src="/LOGO-FEMICRO-PA-icon.png" alt="Femicro-PA Logo" className="w-full h-full object-contain" />
           </div>
           <span className="text-xl font-bold tracking-tight">Femicro-PA</span>
         </div>
