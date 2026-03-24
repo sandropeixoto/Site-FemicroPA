@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import logoIcon from '../assets/LOGO-FEMICRO-PA-icon.png';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
@@ -14,7 +15,7 @@ export default function Navbar() {
       >
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-lg overflow-hidden glass-card flex items-center justify-center p-1">
-            <img src="/LOGO-FEMICRO-PA-icon.png" alt="Femicro-PA Logo" className="w-full h-full object-contain" />
+            <img src={logoIcon} alt="Femicro-PA Logo" className="w-full h-full object-contain" />
           </div>
           <span className="text-xl font-bold tracking-tight">Femicro-PA</span>
         </div>

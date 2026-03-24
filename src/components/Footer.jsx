@@ -1,4 +1,5 @@
-import { Globe, Mail, MessageCircle, ExternalLink } from 'lucide-react';
+import { Globe, Mail, MessageCircle, ExternalLink, Phone, MapPin } from 'lucide-react';
+import logoIcon from '../assets/LOGO-FEMICRO-PA-icon.png';
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
           <div className="col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-14 h-14 rounded-xl overflow-hidden glass-card flex items-center justify-center p-2">
-                <img src="/LOGO-FEMICRO-PA-icon.png" alt="Femicro-PA Logo" className="w-full h-full object-contain" />
+                <img src={logoIcon} alt="Femicro-PA Logo" className="w-full h-full object-contain" />
               </div>
               <span className="text-2xl font-bold tracking-tight">Femicro-PA</span>
             </div>
