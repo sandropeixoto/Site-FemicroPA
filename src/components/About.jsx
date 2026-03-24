@@ -13,7 +13,10 @@ export default function About() {
           >
             <h2 className="text-4xl font-bold mb-6">Nossa <span className="text-secondary">História</span> & Compromisso</h2>
             <p className="text-slate-300 mb-6 leading-relaxed">
-              A Femicro-PA foi fundada para unir, representar e fortalecer os pequenos negócios do Pará. Atuamos na defesa do setor e promovemos um ambiente mais justo e competitivo para quem move a economia do nosso estado.
+              A <span className="text-secondary font-bold">FEMICRO/PA</span> é uma entidade privada, sem fins lucrativos, de âmbito estadual, filiada à <span className="font-bold">COMICRO</span> – Confederação Nacional das Microempresas e Empresas de Pequeno Porte.
+            </p>
+            <p className="text-slate-300 mb-6 leading-relaxed">
+              A sua base de representação é formada pelas <span className="text-accent font-bold">AMICRO</span> – Associações de Microempresa e Empresas de Pequeno Porte, de âmbito municipal. Essas associações congregam os empreendedores individuais, micro e pequenas empresas. Juntos, formamos o que chamamos de <span className="text-white font-bold underline decoration-secondary">Sistema COMICRO-FEMICRO-AMICRO</span>, presente em todo território brasileiro.
             </p>
             
             <div className="space-y-4">

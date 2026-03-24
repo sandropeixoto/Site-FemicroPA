@@ -3,6 +3,8 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Partners from './components/Partners';
 import About from './components/About';
+import Materials from './components/Materials';
+import Social from './components/Social';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -12,9 +14,11 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Social />
         <Services />
         <Partners />
         <About />
+        <Materials />
         <Contact />
       </main>
       <Footer />
