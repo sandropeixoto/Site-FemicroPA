@@ -7,10 +7,12 @@ import Materials from './components/Materials';
 import Social from './components/Social';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import SEO from './components/SEO';
 
 function App() {
   return (
     <div className="min-h-screen bg-primary text-white selection:bg-secondary/30">
+      <SEO />
       <Navbar />
       <main>
         <Hero />
