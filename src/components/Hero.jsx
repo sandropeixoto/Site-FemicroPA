@@ -10,9 +10,10 @@ export default function Hero() {
         <img 
           src={heroBg} 
           alt="Entrepreneurship in Para" 
-          className="w-full h-full object-cover opacity-40 scale-105"
+          className="w-full h-full object-cover opacity-30 scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-transparent to-primary"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#0a0f1e] via-[#0a0f1e]/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0f1e]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto w-full relative z-10 grid md:grid-cols-2 gap-12 items-center">
