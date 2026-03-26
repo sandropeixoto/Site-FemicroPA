@@ -70,7 +70,7 @@ export default function Footer() {
           <motion.div variants={itemVariants}>
             <h4 className="font-bold mb-6">Navegação</h4>
             <ul className="space-y-3 text-slate-400">
-              {['Início', 'Notícias', 'Serviços', 'Sobre', 'Contato'].map((item) => (
+              {['Início', 'Representação', 'Serviços', 'Sobre', 'Contato'].map((item) => (
                 <li key={item} className="hover:text-accent transition-colors cursor-pointer">
                   {item}
                 </li>

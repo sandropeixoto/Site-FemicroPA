@@ -19,7 +19,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex gap-8 font-medium">
-          {['Início', 'Notícias', 'Serviços', 'Sobre', 'Contato'].map((item) => (
+          {['Início', 'Representação', 'Serviços', 'Sobre', 'Contato'].map((item) => (
             <a 
               key={item} 
               href={`#${item.toLowerCase()}`}
@@ -49,7 +49,7 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden mt-2 glass-card p-6 flex flex-col gap-4"
         >
-          {['Início', 'Notícias', 'Serviços', 'Sobre', 'Contato'].map((item) => (
+          {['Início', 'Representação', 'Serviços', 'Sobre', 'Contato'].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="text-lg">{item}</a>
           ))}
           <div className="flex items-center justify-center gap-4 py-2 border-t border-white/10">

@@ -5,6 +5,7 @@ import Partners from './components/Partners';
 import About from './components/About';
 import Materials from './components/Materials';
 import Social from './components/Social';
+import Representation from './components/Representation';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Representation />
         <Social />
         <Services />
         <Partners />
