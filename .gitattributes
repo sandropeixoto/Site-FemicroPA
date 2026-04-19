@@ -1,2 +1,27 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Explicitly mark binary files to prevent normalization and corruption
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.avif binary
+*.ico binary
+*.svg text
+*.pdf binary
+
+# Ensure proper line endings for development files
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+
+# Lockfiles (usually handled by text=auto, but explicit for clarity)
+package-lock.json -text
+yarn.lock -text
+pnpm-lock.yaml -text
